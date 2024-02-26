@@ -8,9 +8,9 @@ int main(void)
     PGA_1_Start();
     for (;;)
     {
-        PGA_1_SetGain(0);
-        CyDelay(500);
         PGA_1_SetGain(1);
+        CyDelay(500);
+        PGA_1_SetGain(2);
         CyDelay(500);
     }
 }
